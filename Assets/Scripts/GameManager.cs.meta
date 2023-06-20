@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 637dc9e516a34524da3d5c03a094cfa5
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - obstacle: {fileID: 3642597188916883457, guid: 9cc125a0dcff029499d684bf36b45346, type: 3}
+  - spawnPoint: {instanceID: 0}
+  - player: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
