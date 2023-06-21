@@ -18,7 +18,6 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI p1ScoreText, p2ScoreText;
     public bool isP1won = true;
     public static string winnerName;
-
     Vector3 PlayerOnePos, PlayerTwoPos;
 
     private void Awake()
@@ -29,9 +28,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
         GameStart();
-
 
     }
 
@@ -50,7 +47,6 @@ public class GameManager : MonoBehaviour
         }
         p1ScoreText.text = "P1: " + p1Score.ToString();
         p2ScoreText.text = "P2: " + p2Score.ToString();
-
 
 
     }
@@ -84,13 +80,13 @@ public class GameManager : MonoBehaviour
     bool isGameFnished()
     {
 
-        if (PlayerOnePos.z < -2.1 || p2Score == 100)
+        if (PlayerOnePos.z < -1.9 || p2Score == 100)
         {
             isP1won = false;
             winnerName = "Player Two";
             return true;
         }
-        if (PlayerTwoPos.z < -2.1 || p1Score == 100)
+        if (PlayerTwoPos.z < -1.9 || p1Score == 100)
         {
             isP1won = true;
             winnerName = "Player One";
@@ -103,6 +99,7 @@ public class GameManager : MonoBehaviour
         return false;
 
     }
+
 
 
 
